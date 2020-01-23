@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlue6">
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/button_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_horizontal|end"
+            android:text="Variablen testen" />
+
+        <Button
+            android:id="@+id/button_speichern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speichern" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/colorBlue3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:text="Lage Nr."
+            android:textAlignment="center"
+            android:textColor="#FDFDFD" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="#FDFDFD" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:text="Winkel [°]"
+            android:textAlignment="center"
+            android:textColor="#FDFDFD" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:text="Dicke [mm]"
+            android:textAlignment="center"
+            android:textColor="#FDFDFD" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:text="Material"
+            android:textAlignment="center"
+            android:textColor="#FDFDFD" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/colorGrey7"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edit_name_1"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Lage 1"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:imeOptions="flagNoFullscreen"/>
+
+        <EditText
+            android:id="@+id/edit_winkel_1"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:imeOptions="flagNoFullscreen"/>
+
+        <EditText
+            android:id="@+id/edit_dicke_1"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:imeOptions="flagNoFullscreen"
+            />
+
+        <EditText
+            android:id="@+id/edit_material_1"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:imeOptions="flagNoFullscreen"/>
+    </LinearLayout>
+
+</LinearLayout>
