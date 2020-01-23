@@ -16,6 +16,7 @@ public class DetailFragment extends Fragment {
 
     private DetailViewModel mViewModel;
 
+
     public static DetailFragment newInstance() {
         return new DetailFragment();
     }
@@ -31,6 +32,7 @@ public class DetailFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         //mViewModel = ViewModelProviders.of(this).get(DetailViewModel.class);
         // TODO: Use the ViewModel
+
     }
 
 }

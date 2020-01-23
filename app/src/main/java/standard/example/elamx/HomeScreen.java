@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class HomeScreen extends Activity {
 
-    Button button1, button2, button3, button_editor;
+    Button button1, button2, button3, button_editor, githubtestbutton;
     TextView details;
     String editor_name_1;
     SharedPreferences sharedpreferences;
