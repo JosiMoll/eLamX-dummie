@@ -7,13 +7,12 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class HomeScreen extends Activity {
 
-    Button button1, button2, button3, button_editor, githubtestbutton;
+    Button button1, button2, button3, button_editor, button_constrained;
     TextView details;
     String editor_name_1;
     SharedPreferences sharedpreferences;
@@ -26,9 +25,10 @@ public class HomeScreen extends Activity {
         // Aus SP die gespeicherte editor_name_1 laden
         sharedpreferences = getSharedPreferences("mypreferences", Context.MODE_PRIVATE);
 
-        button1 = (Button) findViewById(R.id.button1);
-        button2 = (Button) findViewById(R.id.button2);
-        button3 = (Button) findViewById(R.id.button3);
+        button_constrained = (Button) findViewById(R.id.button_constrained);
+        button1 = (Button) findViewById(R.id.lage1button1);
+        button2 = (Button) findViewById(R.id.lage1button2);
+        button3 = (Button) findViewById(R.id.lage1button3);
         button_editor = (Button) findViewById(R.id.button_editor);
         details = (TextView) findViewById(R.id.textView14);
 
@@ -40,6 +40,14 @@ public class HomeScreen extends Activity {
                 Toast.makeText(HomeScreen.this, "Variable: Lage 1: " + stringname, Toast.LENGTH_SHORT).show();
 
                 //Toast.makeText(HomeScreen.this, "SharedPreferences: " + sharedpreferences.getString("editor_name_1", "default value"), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(HomeScreen.this, QuickEditor.class);
+                startActivity(myIntent);
             }
         });
 
@@ -59,6 +67,14 @@ public class HomeScreen extends Activity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(HomeScreen.this, Editor.class);
+                startActivity(myIntent);
+            }
+        });
+
+        button_constrained.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(HomeScreen.this, QuickEditorConstrained.class);
                 startActivity(myIntent);
             }
         });

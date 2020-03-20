@@ -5,15 +5,15 @@
     android:layout_height="match_parent"
     android:weightSum="2"
     android:orientation="vertical"
-    android:background="@color/colorBackground">
+    android:background="@color/colorGrey8">
 
     <ImageView
         android:id="@+id/image1"
-        android:layout_marginTop="150dp"
         android:layout_width="wrap_content"
         android:layout_height="239dp"
+        android:layout_marginTop="150dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/composites_icon"/>
+        android:src="@drawable/welcomscreen" />
 
 
     <LinearLayout
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center|top"
-            android:text="eLamX"
+            android:text="eLamX²"
             android:textAlignment="center"
             android:textColor="@color/colorBlack"
             android:textSize="30sp" />
